@@ -1,0 +1,31 @@
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(247, 247, 247);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  flex: 1;
+}
+
+
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  margin-right: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: #333; 
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,60 @@
+.mainWrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.episodeDetails{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  padding-block:20px;
+  padding-inline:100px;
+  
+
+}
+.rightSection{
+  background-color: #fff;
+  display: flex;
+  padding-inline:20px;
+  padding-block:20px;
+  justify-content: center;
+  gap:20px;
+}
+.showInfo{
+  padding-block:20px;
+  padding-inline:20px;
+  background-color: #eee;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+}
+
+.btns{
+  padding-inline:50px;
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.summary{
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  width: 50%;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+}
+.watchNowButton{
+  border: none;
+  background-color: transparent;
+  border: 1px solid #3c948b;
+  padding-block:20px;
+  padding-inline:100px;
+}
+
+.name
+{
+  gap:20px;
+  padding-block:20px;
+  padding-inline:100px;
+}
