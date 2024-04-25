@@ -2,7 +2,7 @@ import React from 'react';
 import style from './EpisodeDetail.module.css';
 
 const EpisodeDetail = ({ cardData }) => {
-  
+  //getting properties here
   const {
     name,
     type,
@@ -17,11 +17,8 @@ const EpisodeDetail = ({ cardData }) => {
     created,
     rating,
   } = cardData;
-
-  const handleWatchNowClick = () => {
-    alert("Implement functionality to show where the show is available");
-  };
-
+ 
+//show the show details
   return (
     <div className={style.mainWrapper}>
        <div className={style.name}>
@@ -51,7 +48,11 @@ const EpisodeDetail = ({ cardData }) => {
             <p><strong>Genres:</strong> {genres && genres.join(', ')}</p>
             <p><strong>Episodes ordered:</strong> {episodes}</p>
             <p><strong>Created by:</strong> {created && created.join(', ')}</p>
-            <p><strong>Official site:</strong> <a href={officialSite} target="_blank" rel="noopener noreferrer">{officialSite}</a></p>
+            <p><strong>Official site:</strong>{" "}
+            <a href={officialSite} target="_blank" rel="noopener noreferrer">
+              {officialSite}
+            </a>
+          </p>
             <p><strong>Rating:</strong> {rating && rating.average} ({rating && rating.votes} votes)</p>
           </div>
         </div>
@@ -59,11 +60,8 @@ const EpisodeDetail = ({ cardData }) => {
       
     </div>
      <div className={style.btns}>
-     <button className={style.watchNowButton} onClick={handleWatchNowClick}>Watch Now</button>
-     <div className={style.nextEpisode}>
-       <h2>Next Episode</h2>
- 
-     </div>
+     <button className={style.watchNowButton} onClick={() => window.location.href = officialSite}>Watch Now</button>
+
      </div>
     </div>
   );
